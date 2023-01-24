@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
 body {
     margin: 0;
     padding: 0;
@@ -245,6 +246,26 @@ footer {
     text-align: center;
     color: white;
     font-size: 20px;
+}
+/*report table shiz
+*/
+th{
+    background: #607588;
+    color: white;
+    text-align: center;
+  
+}
+table{
+    padding-bottom: 2%;
+    border: 2px solid #607588;
+   
+}
+td{
+    padding:8x;
+}
+
+.report{
+    text-align: center
 }
 
 /*Animations & Transitions

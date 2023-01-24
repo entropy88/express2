@@ -1,16 +1,14 @@
+<main>
 
-    <main>
-    
-      <form action="/" method="GET">
-        <input type="text" class="search" name="search" placeholder="Търси..." value={{search}}>
-        <input type="submit" value="Търси">
-      </form>
-     {{#each refs}}
-    {{> ref}}
-    {{else}}
-    <span>Няма записи в базата.<a href="/create">Създай нов запис</a></span>
-     {{/each}}
-      
-       <a class="btn" href="/report">Отчет</a>
+  <form action="/" method="GET">
+    <input type="text" class="search" name="search" placeholder="Търсене по дума от тема" value={{search}}>
+    <input type="submit" value="Търси">
+  </form>
+  {{#each refs}}
+  {{> ref}}
+  {{else}}
+  <span>Няма записи в базата.<a href="/create">Създай нов запис</a></span>
+  {{/each}}
 
-    </main>
+
+</main>
