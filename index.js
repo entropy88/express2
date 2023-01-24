@@ -16,6 +16,8 @@ const {details} = require('./controllers/details');
 const {edit, post: editPost} =require('./controllers/edit')
 const { notFound } = require('./controllers/notFound');
 
+const {report} = require('./controllers/report');
+
 start();
 
 async function start(){
@@ -32,6 +34,9 @@ app.use(express.urlencoded({extended: false}));
 app.use(await storage());
 
 app.get('/', catalog);
+//report route
+app.get('/report', report)
+
 app.get('/about', about);
 app.get('/details/:id', details);
 app.get('/create', create);
