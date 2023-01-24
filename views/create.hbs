@@ -1,0 +1,46 @@
+
+    <main>
+      <h1>Създай нова справка</h1>
+      <div class="form">
+        <form action='/create' method="POST">
+          <label for="title">Тема</label>
+          <input type="text" id="title" name="title">
+            <label for="languages">Езици</label>
+          <input type="text" id="languages" name="languages">
+
+         <label for="refType">Тип</label>
+          <select id="refType" name="refType">
+            <option value="bt">1 - Бакалавърска дипломна работа</option>
+            <option value="mt">2 - Магистърска дипломна работа</option>
+            <option value="dt">3 - Дисертация</option>
+            <option value="etc">4 - Друго</option>
+          </select>
+
+          </select>
+
+          <label for="contentUrl">Линк</label>
+          <input type="text" id="contentUrl" name="contentUrl">
+              <label for="recipient">Получател</label>
+          <input type="text" id="recipient" name="recipient">
+           <label for="worker">Служител</label>
+          <input type="text" id="worker" name="worker">
+
+          <label for="classification">Класификация</label>
+          <select id="classification" name="classification">
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+          </select>
+
+             <label for="refStatus">Статус</label>
+          <select id="refStatus" name="refStatus">
+            <option value="Приета">Приета</option>
+            <option value="Изпълнена">Изпълнена</option>
+            <option value="Взета">Взета</option>
+           
+          </select>
+          <input type="submit" value="Създай">
+        </form>
+      </div>
+    </main>

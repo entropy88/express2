@@ -1,0 +1,45 @@
+
+<h1>Редактирай справка</h1>
+<div class="form">
+    <form action="/edit/{{ref.id}}" method="POST">
+        <label for="title">Тема</label>
+        <input type="text" id="title" name="title" value={{ref.title}}>
+
+        <label for="languages">Езици</label>
+        <input type="text" id="languages" name="languages" value={{ref.languages}}>
+
+        <label for="refType">Тип</label>
+        <select id="refType" name="refType" value="{{refType}}">
+            <option value="Бакалавърска дипломна работа">Бакалавърска дипломна работа</option>
+            <option value="Магистърска дипломна работа">Магистърска дипломна работа </option>
+            <option value="Дисертация">Дисертация</option>
+            <option value="Друго">Друго </option>
+        </select>
+
+        </select>
+
+        <label for="contentUrl">Линк</label>
+        <input type="text" id="contentUrl" name="contentUrl" value={{ref.contentUrl}}>
+        <label for="recipient">Получател</label>
+        <input type="text" id="recipient" name="recipient" value={{ref.recipient}}>
+        <label for="worker">Служител</label>
+        <input type="text" id="worker" name="worker" value={{ref.worker}}>
+
+        <label for="classification">Класификация</label>
+        <select id="classification" name="classification">
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+        </select>
+
+        <label for="refStatus">Статус</label>
+        <select id="refStatus" name="refStatus">
+            <option value="Приета">Приета</option>
+            <option value="Изпълнена">Изпълнена</option>
+            <option value="Взета">Взета</option>
+
+        </select>
+        <input type="submit" value="Редактирай">
+    </form>
+</div>
