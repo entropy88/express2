@@ -1,7 +1,7 @@
 module.exports={
     report: async (req, res)=>{
         const refs=await req.storage.getAll(req.query);
-      console.log(refs);
+ 
     const clasif={
        "0. Общ отдел":0,
        "1. Философия":0,
@@ -21,7 +21,18 @@ module.exports={
     }
 
     const rowClass=Object.keys(clasif);
-    console.log(rowClass)
+
+    rowClass.forEach(cl=>{
+ 
+        refs.forEach(r=>{
+            if(r.classification==cl){
+                clasif[cl]++;
+            }
+        })
+    })
+
+ 
+    
 
         const ctx= {
             title: "Отчет",
