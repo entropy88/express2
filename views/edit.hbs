@@ -3,10 +3,10 @@
 <div class="form">
     <form action="/edit/{{ref.id}}" method="POST">
         <label for="title">Тема</label>
-        <input type="text" id="title" name="title" value={{ref.title}}>
+        <input type="text" id="title" name="title" value="{{ref.title}}">
 
         <label for="languages">Езици</label>
-        <input type="text" id="languages" name="languages" value={{ref.languages}}>
+        <input type="text" id="languages" name="languages" value="{{ref.languages}}">
 
         <label for="refType">Тип: {{ref.refType}}</label>
         <select id="refType" name="refType" >
