@@ -1,13 +1,11 @@
 <main>
-
+  <a class="glow-on-hover" href="/english">Виж само справките, съдържащи английски език</a>
+  <hr>
   <form action="/" method="GET">
     <input type="text" class="search" name="search" placeholder="Търсене по дума от тема" value={{search}}>
-    <input type="submit"class="searchBtn" value="Търси">
+    <input type="submit" class="searchBtn" value="Търси">
   </form>
-
-    <a class="btn" href="/english">Виж само справките, съдържащи английски език</a>
-    <hr>
-
+  <hr>
   {{#each refs}}
   {{> ref}}
   {{else}}
