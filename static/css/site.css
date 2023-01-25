@@ -16,11 +16,6 @@ img {
     width: auto;
 }
 
-img.cube {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
 
 img.logo {
     width: 80px;
@@ -72,19 +67,20 @@ h1 {
 div.cube {
     display: inline-block;
     border: 1px solid #2b415433;
-   background-color: #607588;
+    background-color: #607588;
     width: 23%;
     vertical-align: top;
     padding-left: 4%;
     padding-right: 4%;
+    border-radius: 4px;
     text-align: center;
 }
 
 div.details {
     display: inline-block;
-    border: 1px solid #2b415433;   
+    border: 1px solid #2b415433;
     width: 23%;
-    vertical-align: top;   
+    vertical-align: top;
     padding-left: 4%;
     padding-right: 4%;
     text-align: center;
@@ -101,7 +97,8 @@ p.name {
     border-bottom: 1px solid #2b415433;
 }
 
-button, main a.btn {
+button,
+main a.btn {
     border: none;
     padding: 8px;
     text-align: center;
@@ -179,12 +176,11 @@ textarea {
     margin: 8px 0 2em;
 }
 
-input.difficulty {
-    width: 20%;
-}
+
 
 input.search {
     width: 50%;
+    display: inline-block;
 }
 
 input[type=submit] {
@@ -194,8 +190,7 @@ input[type=submit] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    width: 50%;
+    font-size: 18px;    
     margin: 5px 5px 5px 25%;
     color: white;
     text-transform: uppercase;
@@ -205,6 +200,9 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #718F94;
     cursor: pointer;
+}
+.searchBtn{    
+    width: 20%;
 }
 
 div.form {
@@ -231,12 +229,12 @@ span.error {
     display: block;
 }
 
-img#sadFaceImg{
+img#sadFaceImg {
     display: block;
     margin: 0 auto;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -247,24 +245,27 @@ footer {
     color: white;
     font-size: 20px;
 }
+
 /*report table shiz
 */
-th{
+th {
     background: #607588;
     color: white;
     text-align: center;
-  
-}
-table{
-    padding-bottom: 2%;
-    border: 2px solid #607588;
-   
-}
-td{
-    padding:8x;
+
 }
 
-.report{
+table {
+    padding-bottom: 2%;
+    border: 2px solid #607588;
+
+}
+
+td {
+    padding: 8x;
+}
+
+.report {
     text-align: center
 }
 
