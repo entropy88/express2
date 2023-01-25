@@ -1,22 +1,22 @@
 {
   "3pgt4ld2tjaks": {
-    "title": "dsfdf",
+    "title": "корекция",
     "languages": "sdfsd",
     "worker": "afa",
     "refType": "Бакалавърска дипломна работа",
     "contentUrl": "https://drive.google.com/file/d/1eg9SgtKkZ53SSB7DodIPZIK9l4MMsQKF/view?usp=share_link",
     "recipient": "dafad",
-    "classification": "7. Изкуство",
-    "refStatus": "Приета"
+    "classification": "0. Общ отдел",
+    "refStatus": "Изпълнена"
   },
   "3pg5iwld2tn3cc": {
     "title": "888888888888888",
     "languages": "български,",
     "worker": "Теди",
-    "refType": "Бакалавърска дипломна работа",
+    "refType": "Магистърска дипломна работа",
     "contentUrl": "https://drive.google.com/file/d/1eg9SgtKkZ53SSB7DodIPZIK9l4MMsQKF/view?usp=share_link",
     "recipient": "лалала",
-    "classification": "1. Философия",
+    "classification": "0. Общ отдел",
     "refStatus": "Приета"
   },
   "3pg81old2w66ig": {
@@ -26,17 +26,17 @@
     "refType": "Бакалавърска дипломна работа",
     "contentUrl": "https://drive.google.com/file/d/1eg9SgtKkZ53SSB7DodIPZIK9l4MMsQKF/view?usp=share_link",
     "recipient": "вз",
-    "classification": "3. Обществени науки",
+    "classification": "0. Общ отдел",
     "refStatus": "Приета"
   },
   "3pg9m8ld2xy3xg": {
     "title": "fdgdf",
     "languages": "fdgdf",
     "worker": "fdgd",
-    "refType": "bt",
+    "refType": "Бакалавърска дипломна работа",
     "contentUrl": "fdgdf",
     "recipient": "fdg",
-    "classification": "1",
+    "classification": "7. Изкуство",
     "refStatus": "Приета"
   },
   "3pg8qcld2z2hd0": {
@@ -46,8 +46,8 @@
     "refType": "Бакалавърска дипломна работа",
     "contentUrl": "1111111",
     "recipient": "111111111",
-    "classification": "1",
-    "refStatus": "Приета"
+    "classification": "0. Общ отдел",
+    "refStatus": "Взета"
   },
   "3pg8dsld300ovk": {
     "title": "33",
@@ -56,6 +56,17 @@
     "refType": "Бакалавърска дипломна работа",
     "contentUrl": "333",
     "recipient": "333",
+    "classification": "0. Общ отдел",
+    "refStatus": "Приета"
+  },
+  "3pg84sldbfxp8g": {
+    "year": 2023,
+    "title": "Spravka s godina",
+    "languages": "bylg",
+    "worker": "test",
+    "refType": "bt",
+    "contentUrl": "https://drive.google.com/drive/folders/1SlbzYWjKaT1iahugeFWyofIEscXHHrmz?usp=share_link",
+    "recipient": "test",
     "classification": "80. Езикознание",
     "refStatus": "Приета"
   }

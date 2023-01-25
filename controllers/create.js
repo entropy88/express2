@@ -3,8 +3,12 @@ module.exports={
         res.render('create',{title:'Добави справка'});
     },
     post: async (req,res)=>{
+
+        const d = new Date();
+        let year = d.getFullYear();
     
         const ref={
+            year:year,
             title:req.body.title,
             languages:req.body.languages,
             worker:req.body.worker,
