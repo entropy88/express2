@@ -1,6 +1,7 @@
 module.exports={
     report: async (req, res)=>{
         const refs=await req.storage.getAll(req.query);
+        const refsCount=refs.length;
  
     const clasif={
        "0. Общ отдел":0,
@@ -31,15 +32,12 @@ module.exports={
         })
     })
 
- 
     
 
         const ctx= {
-            title: "Отчет",
-            refs,
-            clasif,
-            rowClass
-           
+            title: "Отчет",          
+            clasif,           
+            refsCount            
         }
 
         res.render('report',ctx);
