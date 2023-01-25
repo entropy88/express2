@@ -74,6 +74,7 @@ div.cube {
     padding-right: 4%;
     border-radius: 4px;
     text-align: center;
+    margin-bottom: 4px;
 }
 
 div.details {
@@ -92,9 +93,14 @@ p.name {
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
-    text-transform: uppercase;
-    padding: 10px;
-    border-bottom: 1px solid #2b415433;
+    padding-top: 10px;
+
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
 }
 
 button,
@@ -105,11 +111,11 @@ main a.btn {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    width: 43%;
+
     margin: 12px;
     margin-left: 6%;
     border-radius: 4px;
-    background: #607588;
+    background: #545775;
     color: white;
 }
 
@@ -190,7 +196,7 @@ input[type=submit] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;    
+    font-size: 18px;
     margin: 5px 5px 5px 25%;
     color: white;
     text-transform: uppercase;
@@ -201,7 +207,8 @@ input[type=submit]:hover {
     background-color: #718F94;
     cursor: pointer;
 }
-.searchBtn{    
+
+.searchBtn {
     width: 20%;
 }
 
@@ -252,17 +259,20 @@ th {
     background: #607588;
     color: white;
     text-align: center;
-
+    padding: 8px;
 }
 
 table {
-    padding-bottom: 2%;
+    padding: 8px;
     border: 2px solid #607588;
-
+    border-collapse: collapse;
 }
+
+
 
 td {
     padding: 8x;
+    border-top: 2px solid #607588;
 }
 
 .report {
