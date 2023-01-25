@@ -1,0 +1,11 @@
+<main>
+    <p>Справки, съдържащи английски език: {{engRefs.length}}</p>
+    {{#each engRefs}}
+    {{> ref}}
+    {{else}}
+    <span>Няма записи в базата.<a href="/create">Създай нов запис</a></span>
+    {{/each}}
+
+    <hr>
+    <a class="btn" href="/">Обратно към каталога</a>
+</main>

@@ -13,8 +13,9 @@ const {about} = require('./controllers/about');
 const { catalog } = require('./controllers/catalog');
 const {create, post: createPost} = require('./controllers/create');
 const {details} = require('./controllers/details');
-const {edit, post: editPost} =require('./controllers/edit')
+const {edit, post: editPost} =require('./controllers/edit');
 const { notFound } = require('./controllers/notFound');
+const {english} = require('./controllers/english');
 
 const {report} = require('./controllers/report');
 
@@ -44,6 +45,8 @@ app.post('/create', createPost);
 
 app.get('/edit/:id', edit);
 app.post('/edit/:id', editPost);
+
+app.get('/english', english)
 
 app.all('*', notFound);
 
