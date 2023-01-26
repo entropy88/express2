@@ -8,12 +8,12 @@
         <label for="languages">Езици</label>
         <input type="text" id="languages" name="languages" value="{{ref.languages}}">
 
-        <label for="refType">Тип: {{ref.refType}}</label>
+        <label for="refType">Тип:</label>
         <select id="refType" name="refType" >
-            <option value="Бакалавърска дипломна работа">Бакалавърска дипломна работа</option>
-            <option value="Магистърска дипломна работа">Магистърска дипломна работа </option>
-            <option value="Дисертация">Дисертация</option>
-            <option value="Друго">Друго </option>
+            <option value="Бакалавърска дипломна работа"{{#if selectedRefType.bt}} selected="selected" {{/if}}>Бакалавърска дипломна работа</option>
+            <option value="Магистърска дипломна работа"{{#if selectedRefType.mt}} selected="selected" {{/if}}>Магистърска дипломна работа </option>
+            <option value="Дисертация"{{#if selectedRefType.phd}} selected="selected" {{/if}}>Дисертация</option>
+            <option value="Друго"{{#if selectedRefType.oth}} selected="selected" {{/if}}>Друго </option>
         </select>
 
         </select>
