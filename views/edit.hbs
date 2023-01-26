@@ -25,24 +25,24 @@
         <label for="worker">Служител</label>
         <input type="text" id="worker" name="worker" value={{ref.worker}}>
 
-        <label for="classification">Класификация: {{ref.classification}}</label>
+        <label for="classification">Класификация: </label>
         <select id="classification" name="classification">
 
-        <option value="0. Общ отдел">0. Общ отдел</option>
-        <option value="1. Философия">1. Философия</option>
-        <option value="2. Религия">2. Религия</option>
-        <option value="3. Обществени науки">3. Обществени науки</option>
-        <option value="5. Математика. Естествени науки">5. Математика. Естествени науки</option>
-        <option value="61. Медицина">61. Медицина</option>
-        <option value="62. Техника">62. Техника</option>
-        <option value="63. Селско стопанство">63. Селско стопанство</option>
-        <option value="64-69. Промишленост">64-69. Промишленост</option>
-        <option value="793-799. Спорт">793-799. Спорт</option>
-        <option value="7. Изкуство">7. Изкуство</option>
-        <option value="80. Езикознание">80. Езикознание</option>
-        <option value="82. Литературознание">82. Литературознание</option>
-        <option value="9. История">9. История</option>
-        <option value="91. География. Пътешествия">91. География. Пътешествия</option>
+        <option value="0. Общ отдел" {{#if selectedClassif.obsht}} selected="selected" {{/if}}>0. Общ отдел</option>
+        <option value="1. Философия"{{#if selectedClassif.filos}} selected="selected" {{/if}}>1. Философия</option>
+        <option value="2. Религия"{{#if selectedClassif.relig}} selected="selected" {{/if}}>2. Религия</option>
+        <option value="3. Обществени науки"{{#if selectedClassif.obshtestven}} selected="selected" {{/if}}>3. Обществени науки</option>
+        <option value="5. Математика. Естествени науки"{{#if selectedClassif.matem}} selected="selected" {{/if}}>5. Математика. Естествени науки</option>
+        <option value="61. Медицина" {{#if selectedClassif.medic}} selected="selected" {{/if}}>61. Медицина</option>
+        <option value="62. Техника"{{#if selectedClassif.tehnik}} selected="selected" {{/if}}>62. Техника</option>
+        <option value="63. Селско стопанство" {{#if selectedClassif.selsk}} selected="selected" {{/if}}>63. Селско стопанство</option>
+        <option value="64-69. Промишленост" {{#if selectedClassif.promish}} selected="selected" {{/if}}>64-69. Промишленост</option>
+        <option value="793-799. Спорт"{{#if selectedClassif.sport}} selected="selected" {{/if}}>793-799. Спорт</option>
+        <option value="7. Изкуство"{{#if selectedClassif.izkust}} selected="selected" {{/if}}>7. Изкуство</option>
+        <option value="80. Езикознание"{{#if selectedClassif.ezikoz}} selected="selected" {{/if}}>80. Езикознание</option>
+        <option value="82. Литературознание"{{#if selectedClassif.literat}} selected="selected" {{/if}}>82. Литературознание</option>
+        <option value="9. История"{{#if selectedClassif.istor}} selected="selected" {{/if}}>9. История</option>
+        <option value="91. География. Пътешествия" {{#if selectedClassif.georg}} selected="selected" {{/if}}>91. География. Пътешествия</option>
 
 
         </select>
