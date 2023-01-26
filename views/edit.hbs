@@ -42,16 +42,16 @@
         <option value="80. Езикознание"{{#if selectedClassif.ezikoz}} selected="selected" {{/if}}>80. Езикознание</option>
         <option value="82. Литературознание"{{#if selectedClassif.literat}} selected="selected" {{/if}}>82. Литературознание</option>
         <option value="9. История"{{#if selectedClassif.istor}} selected="selected" {{/if}}>9. История</option>
-        <option value="91. География. Пътешествия" {{#if selectedClassif.georg}} selected="selected" {{/if}}>91. География. Пътешествия</option>
+        <option value="91. География. Пътешествия" {{#if selectedClassif.geogr}} selected="selected" {{/if}}>91. География. Пътешествия</option>
 
 
         </select>
 
-        <label for="refStatus">Статус : {{ref.refStatus}}</label><p></p>
+        <label for="refStatus">Статус : </label><p></p>
         <select id="refStatus" name="refStatus">
-            <option value="Приета">Приета</option>
-            <option value="Изпълнена">Изпълнена</option>
-            <option value="Взета">Взета</option>
+            <option value="Приета"{{#if selectedStatus.prieta}} selected="selected" {{/if}}>Приета</option>
+            <option value="Изпълнена" {{#if selectedStatus.izpylnena}} selected="selected" {{/if}}>Изпълнена</option>
+            <option value="Взета" {{#if selectedStatus.vzeta}} selected="selected" {{/if}}>Взета</option>
 
         </select>
         <input type="submit" value="Редактирай">

@@ -27,22 +27,7 @@ module.exports = {
         }
 
         //pass classification
-        //   <option value="0. Общ отдел">0. Общ отдел</option>
-        //     <option value="1. Философия">1. Философия</option>
-        //     <option value="2. Религия">2. Религия</option>
-        //     <option value="3. Обществени науки">3. Обществени науки</option>
-        //     <option value="5. Математика. Естествени науки">5. Математика. Естествени науки</option>
-        //     <option value="61. Медицина">61. Медицина</option>
-        //     <option value="62. Техника">62. Техника</option>
-        //     <option value="63. Селско стопанство">63. Селско стопанство</option>
-        //     <option value="64-69. Промишленост">64-69. Промишленост</option>
-        //     <option value="793-799. Спорт">793-799. Спорт</option>
-        //     <option value="7. Изкуство">7. Изкуство</option>
-        //     <option value="80. Езикознание">80. Езикознание</option>
-        //     <option value="82. Литературознание">82. Литературознание</option>
-        //     <option value="9. История">9. История</option>
-        //     <option value="91. География. Пътешествия">91. География. Пътешествия</option>
-
+  
         let selectedClassif = {
             obsht: false,
             filos: false,
@@ -109,6 +94,18 @@ module.exports = {
                 break;
         }
 
+        //pass refstatus
+        let selectedStatus={
+            prieta:false,
+            izpylnena:false,
+            vzeta:false
+        }
+
+        switch(ref.refStatus){
+            case ("Приета"): selectedStatus.prieta=true; break;
+            case ("Изпълнена"): selectedStatus.izpylnena=true; break;
+            case ("Взета"): selectedStatus.vzeta=true; break;
+        }
 
 
 
@@ -119,7 +116,8 @@ module.exports = {
                 title: 'Редактирай справка',
                 ref,
                 selectedRefType,
-                selectedClassif
+                selectedClassif,
+                selectedStatus
             }
             res.render('edit', ctx);
         };
